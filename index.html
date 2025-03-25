@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QueuStore - Produtos Eletrônicos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-laptop-code me-2"></i>QueuStore
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novidades</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="#" class="btn btn-outline-light me-2">
+              <i class="fas fa-shopping-cart"></i> Carrinho
+              <span class="badge bg-primary">3</span>
+            </a>
+            <a href="#" class="btn btn-outline-light">
+              <i class="fas fa-user"></i> Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>Bem-vindo à QueuStore</h1>
+            <p class="lead">
+              Encontre os melhores produtos de tecnologia com os melhores
+              preços!
+            </p>
+            <div class="d-flex gap-3">
+              <button class="btn btn-primary">Ver Produtos</button>
+              <button class="btn btn-outline-light">Ofertas Especiais</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Tech Store"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produtos em Destaque -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Produtos em Destaque</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card product-card">
+            <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+              -20%
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top"
+              alt="Fone de Ouvido"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fone de Ouvido Wireless</h5>
+              <p class="card-text text-muted">Premium Sound</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="price">90.000Kz</span>
+                  <span class="text-muted text-decoration-line-through ms-2"
+                    >65.000Kz</span
+                  >
+                </div>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card product-card">
+            <div class="badge bg-success position-absolute top-0 end-0 m-2">
+              Novo
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top"
+              alt="Smartwatch"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smartwatch Pro</h5>
+              <p class="card-text text-muted">Monitor de Saúde</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">350.000Kz</span>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card product-card">
+            <div class="badge bg-warning position-absolute top-0 end-0 m-2">
+              Em Estoque
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top"
+              alt="Câmera"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Câmera Digital</h5>
+              <p class="card-text text-muted">4K Resolution</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">450.000Kz</span>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card product-card">
+            <div class="badge bg-info position-absolute top-0 end-0 m-2">
+              Popular
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+              class="card-img-top"
+              alt="Notebook"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Perfume</h5>
+              <p class="card-text text-muted">COCO</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">150.000Kz</span>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categorias -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Categorias Populares</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
+              alt="Smartphones"
+              class="img-fluid rounded"
+            />
+            <div class="category-overlay">
+              <h3>Smartphones</h3>
+              <a href="#" class="btn btn-light">Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Notebooks"
+              class="img-fluid rounded"
+            />
+            <div class="category-overlay">
+              <h3>Notebooks</h3>
+              <a href="#" class="btn btn-light">Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Acessórios"
+              class="img-fluid rounded"
+            />
+            <div class="category-overlay">
+              <h3>Acessórios</h3>
+              <a href="#" class="btn btn-light">Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Sobre Nossa Loja</h5>
+            <p>
+              Somos uma loja virtual especializada em produtos eletrônicos e
+              tecnologia, oferecendo as melhores marcas com os melhores preços.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white">Política de Privacidade</a>
+              </li>
+              <li><a href="#" class="text-white">Termos de Uso</a></li>
+              <li><a href="#" class="text-white">FAQ</a></li>
+              <li><a href="#" class="text-white">Trocas e Devoluções</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contato</h5>
+            <p>Email: queustore@gmail.com.com</p>
+            <p>Telefone: 244 925241548</p>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
