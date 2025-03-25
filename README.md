@@ -1,6 +1,6 @@
 # QueuStore - Loja Virtual de Produtos Eletrônicos
 
-![QueuStore Interface](img/interface.png)
+![QueuStore Interface](./src/img/imagem.png)
 
 ## 📱 Sobre o Projeto
 
